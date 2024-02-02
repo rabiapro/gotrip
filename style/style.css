@@ -1,0 +1,248 @@
+@import 'fonts.css';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik';
+    font-weight: 400;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+.container{
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.header{
+    background: #3E8989;
+}
+.header__nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 33px 0;
+}
+.header__list{
+    display: flex;
+    gap: 30px;
+}
+.header__list-link{
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-block;
+    transition: 0.7s;
+}
+.header__list-link::after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 3px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    opacity: 0;
+    transition: .5s;
+}
+.header__list-link:hover:after{
+    opacity: 1;
+}
+.header__form{
+    display: flex;
+}
+.header__input{
+    padding: 8px 20px;
+    border-radius: 20px 0px 0px 20px;
+    background: #FFF;
+    border: none;
+}
+.header__input::placeholder{
+    font-weight: 400;
+    font-size: 16px;
+    color: #898989;
+    text-transform: capitalize;
+}
+.header__btn{
+    max-width: 74px;
+    width: 100%;
+    padding: 9px 14px;
+    border-radius: 0px 20px 20px 0px;
+    background: #295E5E;
+    border: none;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 9px 14px;
+}
+.header__intro{
+    background: url(../img/intro.png) no-repeat center / cover;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header__intro-title{
+    color: #FFF;
+    font-family: Rubik;
+    font-size: 80px;
+    font-weight: 600;
+}
+.header__intro-text{
+    color: #FFF;
+    font-family: Rubik;
+    font-size: 40px;
+    font-weight: 500;
+}
+.header__intro-info{
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    background-color: #B4436C;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 50px;
+    transition: .7s;
+}
+.header__intro-info:hover{
+    background: #FFF;
+    color: #B4436C;
+}
+.about{
+    margin-top: 80px;
+}
+.about__title{
+    color: #3E8989;
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+.about__content{
+    display: flex;
+    margin-top: 50px;
+    gap: 20px;
+}
+.about__descr{
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    font-family: Rubik;
+    font-size: 18px;
+    font-weight: 400;
+    gap: 20px;
+}
+
+.catalog{
+    margin-top: 97px;
+}
+.catalog__title{
+    color: #3E8989;
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+.catalog__content{
+    display: flex;
+    column-gap: 20px;
+    margin-top: 53px;
+}
+.catalog__card{
+    max-width: 263px;
+    width: 100%;
+}
+.catalog__card-box{
+    width: 100%;
+    min-height: 300px;
+    margin-bottom: 30px;
+    background: #EFEFEF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.catalog__card-title{
+    color: #000;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    transition: .3s;
+}
+.catalog__card-title:hover{
+    color: #B4436C;
+}
+
+.contact{
+    margin-top: 100px;
+}
+.contact__title{
+    color: #3E8989;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.contact__info{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0 104px;
+}
+.contact__info-left{
+    display: flex;
+    flex-direction: column;
+}
+.contact__info-right{
+    color: #000;
+    font-family: Rubik;
+    font-size: 20px;
+    font-weight: 400;
+    width: 555px;
+}
+.number, .email{
+    color: #000;
+    font-family: Rubik;
+    font-size: 20px;
+    font-weight: 400;
+}
+.number{
+    margin-bottom: 20px;
+}
+
+.footer{
+    background: #3E8989;
+}
+.footer__list{
+    display: flex;
+    justify-content: center;
+    padding: 40px 0 59px;
+    gap: 30px;
+}
+.footer__list-links{
+    color: #FFF;
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 500;
+}
+.footer__info{
+display: flex;
+justify-content: center;
+gap: 6px;
+padding-bottom: 15px;
+color: #FFF;
+font-family: Rubik;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
